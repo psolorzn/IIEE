@@ -1,0 +1,95 @@
+DICCIONARIO DE DATOS
+=======================================
+cargos
+---------------------------------------
+idcargo tinyint
+cargo varchar(60)
+=======================================
+iiee
+---------------------------------------
+codmod int
+nombre varchar(60)
+idnivel tinyint
+idarea tinyint
+=======================================
+personas
+---------------------------------------
+codmod int
+idusr int
+dni varchar(8)
+apellidos varchar(50)
+nombres varchar(50)
+celular varchar(20)
+correo varchar(60)
+=======================================
+directivos
+---------------------------------------
+codmod int
+idcargo tinyint
+idusr int
+=======================================
+secciones
+---------------------------------------
+codmod int
+idgrado tinyint 
+idsec tinyint
+seccion varchar(30)
+idturno tinyint
+=======================================
+docentes
+---------------------------------------
+codmod int
+idgrado tinyint
+idsec tinyint
+idarea tinyint
+idusr int
+=======================================
+horario
+---------------------------------------
+codmod int
+idgrado tinyint
+idsec tinyint
+idarea tinyint
+iddia tinyint
+idhora tinyint
+=======================================
+horas
+---------------------------------------
+codmod int
+idtipo tinyint
+idturno tinyint
+idhora tinyint
+hora varchar(30)
+inicio varchar(10)
+duracion tinyint
+=======================================
+tipohorario
+---------------------------------------
+idtipo tinyint
+tipo varchar(30)
+=======================================
+dias
+---------------------------------------
+iddia tinyint
+dia varchar(30)
+=======================================
+turnos
+---------------------------------------
+idturno tinyint
+turno varchar(30)
+=======================================
+areas
+---------------------------------------
+idarea tinyint
+area varchar(60)
+=======================================
+grados
+---------------------------------------
+idgrado tinyint
+grado varchar(30)
+=======================================
+niveles
+---------------------------------------
+idnivel tinyint
+nivel varchar(50)
+=======================================
