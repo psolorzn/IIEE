@@ -10,7 +10,7 @@ iiee
 codmod int
 nombre varchar(60)
 idnivel tinyint
-idarea tinyint
+idageo tinyint
 =======================================
 personas
 ---------------------------------------
@@ -85,6 +85,7 @@ area varchar(60)
 =======================================
 grados
 ---------------------------------------
+idnivel tinyint
 idgrado tinyint
 grado varchar(30)
 =======================================
@@ -97,4 +98,9 @@ accesos
 ---------------------------------------
 codmod int
 clave varchar(30)
+=======================================
+areageo
+---------------------------------------
+idageo tinyint
+ageo varchar(30)
 =======================================
