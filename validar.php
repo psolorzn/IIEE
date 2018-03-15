@@ -7,7 +7,6 @@
 
 	$link=conectarse();
 	$sql = "select accesos.codmod, accesos.clave, iiee.nombre from accesos, iiee where accesos.codmod = '$codmod' and accesos.clave = '$clave' and accesos.codmod = iiee.codmod; ";
-	// select accesos.codmod, accesos.clave, iiee.nombre from accesos, iiee where accesos.codmod = '239848' and accesos.clave = 'jma' and accesos.codmod = iiee.codmod;
 	$result = mysqli_query($link, $sql);
 
 	if (mysqli_num_rows($result) > 0) {
